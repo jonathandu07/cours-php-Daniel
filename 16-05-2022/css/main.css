@@ -41,3 +41,11 @@ td{
     color: #f9ba05;
 font-size: 2rem;
 font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;}
+
+b{
+    border: solid 2px #f9ba05;
+}
+
+input{
+    text-align: center;
+}
