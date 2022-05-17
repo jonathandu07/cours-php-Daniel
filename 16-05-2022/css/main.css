@@ -11,36 +11,38 @@ section{
     color: beige;
     text-align: center;
     margin: auto;
-    margin-top:50px;
+    margin-bottom:25px;
     border-radius: 10px;
     border: 1px solid #f9ba05;
 }
 
 table{
     margin: auto;
-
+    width: 25vw;
+    /* height: 400px;
+    background-color: blanchedalmond; */
 }
 
 tr{
-    height: 100px;
 }
 
 td{
-    width: 100px;
+    /* height: 100px; */
+    width: 100%;
     border: 1px solid #f9ba05;
     text-align: center;
     color: white;
     font-weight: bold;
     border-radius: 10px;
-    font-size: 2rem;
+    font-size: 1rem;
     background-color: #B22222;
-    
+    border-spacing: 5px 1rem;
 }
 
 .lien{
     color: #f9ba05;
-font-size: 2rem;
-font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;}
+    font-size: 2rem;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;}
 
 b{
     border: solid 2px #f9ba05;
@@ -49,3 +51,21 @@ b{
 input{
     text-align: center;
 }
+
+.main{
+    /* padding-left:5%;
+    padding-right: 5%; */
+    text-align: center;
+}
+
+.message{
+    resize: none;
+}
+.bas{
+    align-self: center;
+}
+
+/* .affichage{
+    margin-top: 5%;
+    background-color: #B22222;
+} */
