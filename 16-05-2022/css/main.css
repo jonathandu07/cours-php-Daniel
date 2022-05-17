@@ -69,3 +69,15 @@ input{
     margin-top: 5%;
     background-color: #B22222;
 } */
+
+.formumaire{
+    text-align: center;
+}
+
+h3{
+    text-align: center;
+    font-size:3rem;
+    color:#f9ba05 ;
+    /* border: solid 1px #B22222; */
+    /* width: 250px; */
+}

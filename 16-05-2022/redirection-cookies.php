@@ -4,16 +4,15 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cookies</title>
+    <title>cookie</title>
 </head>
 <body>
-    <h1>La Gestion des cookies</h1>
-    <!-- création du cookies -->
     <?php
-        setcookie('prenom','DéDé');
-
-        // cookies valable 24h
-        setcookie('prenom','DéDé',time()+86400);
+        if(isset($_COOKIE['Prenom'])&(isset($_COOKIE['Nom']))){
+            echo $_COOKIE['Prenom'].' '.$_COOKIE['Nom'];
+        }
     ?>
+    
+    <a href="./cookies-bis.php">Page 2</a>
 </body>
 </html>
