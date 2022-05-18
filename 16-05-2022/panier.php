@@ -2,7 +2,6 @@
 // démarage de la session
 session_start();
 $perfil = session_id();
-
 if(isset($_POST['logout'])){
     session_unset();
     session_destroy();
@@ -25,7 +24,7 @@ if(isset($_POST['logout'])){
         <form action="<?php $_SERVER['PHP_SELF'] ?>" method="POST">
             <input type="text" name="nom" placeholder="nom article" required>
             <input type="text" name="code" placeholder="code article" required>
-            <input type="text" name="prix" placeholder="prix required">
+            <input type="text" name="prix" placeholder="prix"required>
             <input type="submit" name="valide" value="valider">
             <input type="submit" name="afficher" value="afficher">
             <input type="reset" value="annuler" class="annuler">
@@ -37,18 +36,32 @@ if(isset($_POST['logout'])){
             $nom=htmlentities(trim($_POST['nom']));
             $code=htmlentities(trim($_POST['code']));
             $prix=htmlentities(trim($_POST['prix']));
-            $_SESSION['nom']=$_POST['nom']."/".$nom; 
-            $_SESSION['code']=$_POST['code']."/".$code;
-            $_SESSION['prix']=$_POST['prix']."/".$prix;
+            // $_SESSION['nom']=$_POST['nom']."/".$nom; 
+            // $_SESSION['code']=$_POST['code']."/".$code;
+            // $_SESSION['prix']=$_POST['prix']."/".$prix;
+
+            // $historique = array('Nom'=>$nom,'Code'=>$code,'Prix'=>$prix,);
+            $_SESSION['historique']=$historique = array('Nom'=>$nom,'Code'=>$code,'Prix'=>$prix,);
+            $historique = array($_SESSION['panier']=$nom."/".$code."/".$prix);
+            $_SESSION['panier']=$nom."/".$code."/".$prix;
 
             // $nom=$_SESSION['nom']=$_POST['nom'];
             // $code=$_SESSION['code']=$_POST['code'];
             // $prix=$_SESSION['prix']=$_POST['prix'];
             // explode('/', $_SESSION['nom']);
         }
-        print_r($_SESSION['code']);
-        print_r($_SESSION['nom']);
-        print_r($_SESSION['prix']);
+        // print_r($_SESSION['code']);
+        // print_r($_SESSION['nom']);
+        // print_r($_SESSION['prix']);
+
+        if(isset($_POST['afficher'])){
+            // print_r($_SESSION['panier']);
+            print_r($_SESSION['historique']);
+            foreach(array($historique = array($_SESSION['panier']=$nom."/".$code."/".$prix)) as $cle){
+                print_r($cle);
+            }
+            
+        }
     ?>
 
 
