@@ -12,8 +12,8 @@
         <form action="<?php echo $_SERVER["PHP_SELF"]; ?>" method="POST">
             <input type="submit" name="choix" value="Glock">
             <input type="submit" name="choix" value="Lebel">
-            <input type="submit" name="choix" value="Smith & Wesson">
-            <input type="submit" name="choix" value="Sig Sauer">
+            <input type="submit" name="choix" value="Smith-&-Wesson">
+            <input type="submit" name="choix" value="Sig-Sauer">
         </form>
     </section>
 
@@ -23,23 +23,73 @@ if (isset($_POST['choix'])){
 
             switch( $operation )
             {
-                case "redfil" : $result = readfile('./txt/glock.txt');
-                echo("<tr><td>");
-                echo "<p class='bg-primary'>Lecture avec readfile()<br><br>"; 
-                echo( "Résultat de l'addtion est:<b> $result</b>" );
-                echo("</td></tr>");break;
-                case "mul" : $result = multiplier($val1,$val2);
-                echo("<tr><td>");
-                echo( "Résultat de la multiplication est:<b> $result</b>" );
-                echo("</td></tr>");break;
-                case "sous" : $result = soustraire($val1,$val2);
-                echo("<tr><td>");
-                echo( "Résultat de la soustraction est:<b> $result</b>" );
-                echo("</td></tr>");break;
-                case "div" : $result = diviser($val1,$val2);
-                echo("<tr><td>");
-                echo( "Résultat de la division est:<b> $result</b>" );
-                echo("</td></tr>");break;
+                case "Glock" : $result = readfile('./txt/glock.txt');
+                echo "<p>Lecture avec readfile()<br><br>";
+                echo "</p>";
+                break;
+                case "Glock" : $result = fopen('./txt/glock.txt', 'a+');
+                echo "<p>Lecture avec fpassthru()<br><br>";
+                fpassthru($file);
+                fclose($file);
+                echo "</p>";
+                break;
+                case "Glock" : $result = file('./txt/glock.txt');
+                foreach($filef as $index => $val){
+                    echo "<br>".$val;
+                }
+                echo "</p>";
+                break;
+
+                case "Lebel" : $result = readfile('./txt/lebel.txt');
+                echo "<p>Lecture avec readfile()<br><br>";
+                echo "</p>";
+                break;
+                case "Lebel" : $result = fopen('./txt/lebel.txt', 'a+');
+                echo "<p>Lecture avec fpassthru()<br><br>";
+                fpassthru($file);
+                fclose($file);
+                echo "</p>";
+                break;
+                case "Lebel" : $result = file('./txt/lebel.txt');
+                foreach($filef as $index => $val){
+                    echo "<br>".$val;
+                }
+                echo "</p>";
+                break;
+
+                case "Smith-&-Wesson" : $result = readfile('./txt/smith.txt');
+                echo "<p>Lecture avec readfile()<br><br>";
+                echo "</p>";
+                break;
+                case "Smith-&-Wesson" : $result = fopen('./txt/smith.txt', 'a+');
+                echo "<p>Lecture avec fpassthru()<br><br>";
+                fpassthru($file);
+                fclose($file);
+                echo "</p>";
+                break;
+                case "Smith-&-Wesson" : $result = file('./txt/smith.txt');
+                foreach($filef as $index => $val){
+                    echo "<br>".$val;
+                }
+                echo "</p>";
+                break;
+
+                case "Sig-Sauer" : $result = readfile('./txt/sig.txt');
+                echo "<p>Lecture avec readfile()<br><br>";
+                echo "</p>";
+                break;
+                case "Sig-Sauer" : $result = fopen('./txt/sig.txt', 'a+');
+                echo "<p>Lecture avec fpassthru()<br><br>";
+                fpassthru($file);
+                fclose($file);
+                echo "</p>";
+                break;
+                case "Sig-Sauer" : $result = file('./txt/sig.txt');
+                foreach($filef as $index => $val){
+                    echo "<br>".$val;
+                }
+                echo "</p>";
+                break;
             }
         }
     ?>
