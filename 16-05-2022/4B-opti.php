@@ -27,13 +27,17 @@ if (isset($_POST['choix'])){
                 echo "<p>Lecture avec readfile()<br><br>";
                 echo "</p>";
                 break;
-                case "Glock" : $result = fopen('./txt/glock.txt', 'a+');
+
+                case "Glock" : $file = fopen('./txt/glock.txt', 'a+');
+                $file = fopen('./txt/glock.txt', 'a+');
                 echo "<p>Lecture avec fpassthru()<br><br>";
                 fpassthru($file);
                 fclose($file);
                 echo "</p>";
                 break;
-                case "Glock" : $result = file('./txt/glock.txt');
+
+                case "Glock" : $filef = file('./txt/glock.txt');
+                $filef = file('./txt/glock.txt');
                 foreach($filef as $index => $val){
                     echo "<br>".$val;
                 }
@@ -46,12 +50,12 @@ if (isset($_POST['choix'])){
                 break;
                 case "Lebel" : $result = fopen('./txt/lebel.txt', 'a+');
                 echo "<p>Lecture avec fpassthru()<br><br>";
-                fpassthru($file);
-                fclose($file);
+                fpassthru($result);
+                fclose($result);
                 echo "</p>";
                 break;
                 case "Lebel" : $result = file('./txt/lebel.txt');
-                foreach($filef as $index => $val){
+                foreach($result as $index => $val){
                     echo "<br>".$val;
                 }
                 echo "</p>";
@@ -63,12 +67,12 @@ if (isset($_POST['choix'])){
                 break;
                 case "Smith-&-Wesson" : $result = fopen('./txt/smith.txt', 'a+');
                 echo "<p>Lecture avec fpassthru()<br><br>";
-                fpassthru($file);
-                fclose($file);
+                fpassthru($result);
+                fclose($result);
                 echo "</p>";
                 break;
                 case "Smith-&-Wesson" : $result = file('./txt/smith.txt');
-                foreach($filef as $index => $val){
+                foreach($result as $index => $val){
                     echo "<br>".$val;
                 }
                 echo "</p>";
@@ -80,12 +84,12 @@ if (isset($_POST['choix'])){
                 break;
                 case "Sig-Sauer" : $result = fopen('./txt/sig.txt', 'a+');
                 echo "<p>Lecture avec fpassthru()<br><br>";
-                fpassthru($file);
-                fclose($file);
+                fpassthru($result);
+                fclose($result);
                 echo "</p>";
                 break;
                 case "Sig-Sauer" : $result = file('./txt/sig.txt');
-                foreach($filef as $index => $val){
+                foreach($result as $index => $val){
                     echo "<br>".$val;
                 }
                 echo "</p>";

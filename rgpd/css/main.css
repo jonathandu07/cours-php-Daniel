@@ -1,0 +1,117 @@
+body{
+    background-color: #03224c;
+}
+
+/* travail sur la section */
+
+section{
+    width: 20vw;
+    line-height:5vh;
+    background-color:#8B0000;
+    color: beige;
+    text-align: center;
+    margin: auto;
+    margin-bottom:25px;
+    border-radius: 10px;
+    border: 1px solid #f9ba05;
+}
+
+table{
+    margin: auto;
+    width: 25vw;
+    /* height: 400px;
+    background-color: blanchedalmond; */
+}
+
+tr{
+}
+
+.gestion{
+    height: 100%;
+    width: 25%;
+    border: 1px solid #f9ba05;
+    text-align: center;
+    color: white;
+    font-weight: bold;
+    font-size: 1rem;
+    background-color: #8B0000;
+}
+
+td{
+    height: 100%;
+    width: 100%;
+    border: 1px solid #f9ba05;
+    text-align: center;
+    color: white;
+    font-weight: bold;
+    border-radius: 10px;
+    font-size: 1rem;
+    background-color: #8B0000;
+    border-spacing: 5px 1rem;
+}
+
+
+
+.lien{
+    color: #f9ba05;
+    font-size: 2rem;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;}
+
+b{
+    border: solid 2px #f9ba05;
+}
+
+input{
+    text-align: center;
+}
+
+.main{
+    /* padding-left:5%;
+    padding-right: 5%; */
+    text-align: center;
+}
+
+.message{
+    resize: none;
+}
+.bas{
+    align-self: center;
+}
+
+/* .affichage{
+    margin-top: 5%;
+    background-color: #B22222;
+} */
+
+.formumaire{
+    text-align: center;
+}
+
+h3{
+    text-align: center;
+    font-size:3rem;
+    color:#f9ba05 ;
+    /* border: solid 1px #B22222; */
+    /* width: 250px; */
+}
+
+.bas{
+    color: #f9ba05;
+    font-size: 2rem;
+    text-align: center;
+    border: 1px solid #f9ba05;
+    background-color: #8B0000;
+    align-content: end;
+}
+
+.mention{
+    color: #f9ba05;
+    font-size: 2rem;
+    text-align: center;
+    /* border: 1px solid #f9ba05; */
+    background-color: #8B0000;
+}
+
+/* $_session =['prix']=$_session['prix']
+rprint
+fprint*/
