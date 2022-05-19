@@ -2,7 +2,6 @@
 // démarage de la session
 session_start();
 $perfil = session_id();
-
 if(isset($_POST['logout'])){
     session_unset();
     session_destroy();
