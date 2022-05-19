@@ -18,21 +18,29 @@
     </section>
 
     <?php
-    function glock($val1, $val2){
-        return $val1 + $val2;
-        }
+if (isset($_POST['choix'])){
+    $operation = $_POST['choix'];
 
-
-        function diviser($val1, $val2){
-        return $val1 / $val2;
-        }
-
-        function multiplier($val1, $val2){
-        return $val1 * $val2;
-        }
-
-        function soustraire($val1, $val2){
-        return $val1 - $val2;
+            switch( $operation )
+            {
+                case "redfil" : $result = readfile('./txt/glock.txt');
+                echo("<tr><td>");
+                echo "<p class='bg-primary'>Lecture avec readfile()<br><br>"; 
+                echo( "Résultat de l'addtion est:<b> $result</b>" );
+                echo("</td></tr>");break;
+                case "mul" : $result = multiplier($val1,$val2);
+                echo("<tr><td>");
+                echo( "Résultat de la multiplication est:<b> $result</b>" );
+                echo("</td></tr>");break;
+                case "sous" : $result = soustraire($val1,$val2);
+                echo("<tr><td>");
+                echo( "Résultat de la soustraction est:<b> $result</b>" );
+                echo("</td></tr>");break;
+                case "div" : $result = diviser($val1,$val2);
+                echo("<tr><td>");
+                echo( "Résultat de la division est:<b> $result</b>" );
+                echo("</td></tr>");break;
+            }
         }
     ?>
 </body>

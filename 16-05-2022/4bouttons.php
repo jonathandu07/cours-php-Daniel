@@ -19,9 +19,6 @@
     
     <?php
 if(isset($_POST['glock'])){
-
-                
-
     echo "<p class='bg-primary'>Lecture avec readfile()<br><br>";
 
     readfile('./txt/glock.txt');
