@@ -1,3 +1,13 @@
+<?php
+    error_reporting(0);
+     session_start();
+     $perfil = session_id();
+
+if(isset($_POST['logout'])){
+    session_unset();
+    session_destroy();
+}
+?>
 <!DOCTYPE html>
 <html lang="fr">
 <head>
@@ -12,6 +22,7 @@
         <input type="text" name="pseudo" placeholder="pseudo">
         <input type="password" name="password" placeholder="mot de passe" required>
         <input type="submit" name="valide" value="valider">
+        <input type="submit" name="logout" value="logout">
      </form>
     
      <?php
@@ -24,15 +35,19 @@
                 header("Location: authentification.php");
             }
             else{
-                $tentative =0;
-                while(($_POST['password'] != $password &&  $_POST['pseudo'] != $pseudo)){
-                $tentative ++;
-                if($tentative >= 3){
-                    header("Location: erreur.php");
+                $_SESSION['echec']++;
+                if($_SESSION['echec']<=3){
+                    echo "<section>"."<h1>"."vous avez vu : ".$_SESSION['echec']." fois cette page"."<br/>"."</h1>"."</section>";
                 }
-            }
-            
-        }
+                else{
+                    if(isset($_SESSION['echec'])>=3){
+                        header('location:erreur.php');
+                        exit;
+                     }
+                     else{
+                         $_SESSION['echec']=0;
+                     }
+        }}
      }
 
      ?>

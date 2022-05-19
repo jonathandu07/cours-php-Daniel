@@ -26,6 +26,17 @@ table{
 tr{
 }
 
+.gestion{
+    height: 100%;
+    width: 25%;
+    border: 1px solid #f9ba05;
+    text-align: center;
+    color: white;
+    font-weight: bold;
+    font-size: 1rem;
+    background-color: #8B0000;
+}
+
 td{
     height: 100%;
     width: 100%;
@@ -35,9 +46,11 @@ td{
     font-weight: bold;
     border-radius: 10px;
     font-size: 1rem;
-    background-color: #B22222;
+    background-color: #8B0000;
     border-spacing: 5px 1rem;
 }
+
+
 
 .lien{
     color: #f9ba05;
@@ -81,3 +94,24 @@ h3{
     /* border: solid 1px #B22222; */
     /* width: 250px; */
 }
+
+.bas{
+    color: #f9ba05;
+    font-size: 2rem;
+    text-align: center;
+    border: 1px solid #f9ba05;
+    background-color: #8B0000;
+    align-content: end;
+}
+
+.mention{
+    color: #f9ba05;
+    font-size: 2rem;
+    text-align: center;
+    /* border: 1px solid #f9ba05; */
+    background-color: #8B0000;
+}
+
+/* $_session =['prix']=$_session['prix']
+rprint
+fprint*/

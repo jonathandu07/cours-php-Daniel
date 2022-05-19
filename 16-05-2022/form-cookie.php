@@ -14,6 +14,7 @@
         <input type="text" name="pseudo" placeholder="pseudo" class="psuedo input">
         <input type="password" name="password" placeholder="mot de passe" required  class="password input">
         <input type="submit" name="valide" value="valider"  class="valider">
+        <input type="reset" name="annuler" value="annuler" class="annuler">
      </form>
     </section>
 
