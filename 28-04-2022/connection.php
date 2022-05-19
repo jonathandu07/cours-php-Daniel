@@ -18,12 +18,15 @@ if(isset($_POST['logout'])){
     <title>connextion</title>
 </head>
 <body>
-    <form action="connection.php" method="POST">
-        <input type="text" name="pseudo" placeholder="pseudo">
-        <input type="password" name="password" placeholder="mot de passe" required>
-        <input type="submit" name="valide" value="valider">
-        <input type="submit" name="logout" value="logout">
-     </form>
+    <section>
+        <form action="connection.php" method="POST">
+            <input type="text" name="pseudo" placeholder="pseudo">
+            <input type="password" name="password" placeholder="mot de passe" required>
+            <input type="submit" name="valide" value="valider">
+            <input type="submit" name="logout" value="logout">
+        </form>
+    </section>
+
     
      <?php
      $pseudo ="jojo";
