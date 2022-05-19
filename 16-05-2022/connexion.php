@@ -35,6 +35,7 @@ if(isset($_POST['logout'])){
 
                 if($_POST['password'] == $password &&  $_POST['identifiant'] == $identifiant){
                     header("Location:succes.php");
+                    exit();
                     $_SESSION['tentative']=0;
                 }
                 else{
@@ -44,7 +45,7 @@ if(isset($_POST['logout'])){
                     }
                     else{
                         header('location:echec.php');
-                        exit;
+                        exit();
                     }
                 }
             }

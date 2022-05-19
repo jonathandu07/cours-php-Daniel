@@ -5,11 +5,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/main.css">
-    <title>Succes</title>
+    <title>Echec</title>
 </head>
 <body>
     <section>
-        <h1>Connexion réussite !</h1>
+        <h1>Connexion échouée !</h1>
         <button onclick="retourn()">retour</button>
     </section>
     <?php
