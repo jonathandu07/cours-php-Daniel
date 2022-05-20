@@ -1,13 +1,14 @@
 body{
-    background-color: #03224c;
+    background: rgb(178,34,34);
+    background: radial-gradient(circle, rgba(178,34,34,1) 0%, rgba(139,0,0,1) 50%);
 }
 
 /* travail sur la section */
 
 section{
-    /* width: 35vw; */
+    width: 35vw;
     line-height:5vh;
-    background-color:#8B0000;
+    background-color:#03224c;
     color: beige;
     text-align: center;
     margin: auto;
