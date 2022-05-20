@@ -5,7 +5,7 @@ body{
 /* travail sur la section */
 
 section{
-    width: 20vw;
+    /* width: 35vw; */
     line-height:5vh;
     background-color:#8B0000;
     color: beige;
