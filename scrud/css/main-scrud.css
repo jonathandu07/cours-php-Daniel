@@ -1,11 +1,11 @@
 body{
-    background: rgb(178,34,34);
+    /* background: rgb(178,34,34); */
     background: radial-gradient(circle, rgba(178,34,34,1) 20%, rgba(139,0,0,1) 50%, rgba(115,25,20,1) 80%);
 }
 
 /* travail sur la section */
 
-section{
+.section-css{
     width: 35vw;
     line-height:5vh;
     background-color:#03224c;
@@ -17,14 +17,15 @@ section{
     border: 1px solid #f9ba05;
 }
 
-table{
+
+.table-css{
     margin: auto;
     width: 25vw;
     /* height: 400px;
     background-color: blanchedalmond; */
 }
 
-tr{
+.tr-css{
 }
 
 .gestion{
@@ -38,7 +39,7 @@ tr{
     background-color: #8B0000;
 }
 
-td{
+.td-css{
     height: 100%;
     width: 100%;
     border: 1px solid #f9ba05;
@@ -64,6 +65,15 @@ b{
 
 input{
     text-align: center;
+    background-color: rgba(255, 255, 255, 0);
+}
+
+.input-css{
+    text-align: center;
+    border-radius: 10px;
+    font-size: 1rem;
+    color: #f9ba05;
+    background: radial-gradient(circle, rgba(178,34,34,1) 20%, rgba(139,0,0,1) 50%, rgba(115,25,20,1) 80%);
 }
 
 .main{
@@ -88,9 +98,15 @@ input{
     text-align: center;
 }
 
-h3{
+.h1-css{
     text-align: center;
     font-size:3rem;
+    color:#B22222 ;
+}
+
+h3{
+    text-align: center;
+    font-size:2rem;
     color:#f9ba05 ;
     /* border: solid 1px #B22222; */
     /* width: 250px; */
@@ -113,6 +129,17 @@ h3{
     background-color: #8B0000;
 }
 
+.boutton{
+    border-radius: 10px;
+    border: 1px solid #f9ba05;
+    font-size: 1.5rem;
+    background: radial-gradient(circle, rgba(178,34,34,1) 20%, rgba(139,0,0,1) 50%, rgba(115,25,20,1) 80%);
+    color: #f9ba05;
+}
+
+.taille1{
+    height: 20px;
+}
 /* $_session =['prix']=$_session['prix']
 rprint
 fprint*/

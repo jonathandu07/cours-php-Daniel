@@ -5,7 +5,7 @@ body{
 
 /* travail sur la section */
 
-section{
+section-css{
     width: 35vw;
     line-height:5vh;
     background-color:#03224c;
@@ -17,14 +17,14 @@ section{
     border: 1px solid #f9ba05;
 }
 
-table{
+table-css{
     margin: auto;
     width: 25vw;
     /* height: 400px;
     background-color: blanchedalmond; */
 }
 
-tr{
+tr-css{
 }
 
 .gestion{
@@ -38,7 +38,7 @@ tr{
     background-color: #8B0000;
 }
 
-td{
+td-css{
     height: 100%;
     width: 100%;
     border: 1px solid #f9ba05;
