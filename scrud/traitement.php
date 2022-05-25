@@ -77,11 +77,17 @@ $idcom=connexbase("magasin","sql-param");
         $Age= htmlspecialchars($_POST['Age']);
         $Mail= htmlspecialchars($_POST['Mail']);
         $code= htmlspecialchars($_POST['code']);
-        
+
         $rqt_update="UPDATE client SET Id_Client='$id',Nom='$Nom' ,Prenom='$Prenom',Adresse='$Adresse',Ville='$Ville', Age='$Age' ,Mail='$Mail' WHERE Id_Client='$code'";
         $resultat=$idcom->query($rqt_update);
+
+        header('location: traitement.php');
+        exit();
     }
 
+
+    $resultat->free();
+    $idcom->close();
     ?>
 </body>
 </html>
