@@ -11,12 +11,12 @@ $idcom=connexbase("magasin","sql-param");
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/main-scrud.css">
     <link rel="shortcut icon" href="./images/rouge-PTLEJ-bases.png">
-    <title>Ajout article</title>
+    <title>Ajout client</title>
 </head>
 <body>
     <section class="section-css">
-        <h1>Ajout article</h1>
-        <h3>ajoueter des articles</h3>
+        <h1>Ajout client</h1>
+        <h3>ajouter des clients</h3>
     </section>
     <?php
     echo "<section class='section-css'>"."<h3>"."traitement php"."</h3>"."</section>";
@@ -36,7 +36,10 @@ $idcom=connexbase("magasin","sql-param");
 
         // création du formulaire
 
-
+        if(!isset($_POST['Id_Client'])){
+            header('location: chercher-client.php');
+            exit();
+        }
 
         ?>
     </section>
@@ -63,8 +66,20 @@ $idcom=connexbase("magasin","sql-param");
     </section>
 
     <?php
+
     if(isset($_POST['UPDATE'])){
-        $rqt_update="UPDATE client SET Id_Client='$_POST['id']' WHERE Id_Client='$_POST['code']'";
+
+        $id= htmlspecialchars($_POST['Id_Client']);
+        $Nom= htmlspecialchars($_POST['Nom']);
+        $Prenom= htmlspecialchars($_POST['Prenom']);
+        $Adresse= htmlspecialchars($_POST['Adresse']);
+        $Ville= htmlspecialchars($_POST['Ville']);
+        $Age= htmlspecialchars($_POST['Age']);
+        $Mail= htmlspecialchars($_POST['Mail']);
+        $code= htmlspecialchars($_POST['code']);
+        
+        $rqt_update="UPDATE client SET Id_Client='$id',Nom='$Nom' ,Prenom='$Prenom',Adresse='$Adresse',Ville='$Ville', Age='$Age' ,Mail='$Mail' WHERE Id_Client='$code'";
+        $resultat=$idcom->query($rqt_update);
     }
 
     ?>
