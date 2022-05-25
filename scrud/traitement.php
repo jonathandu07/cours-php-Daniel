@@ -51,12 +51,22 @@ $idcom=connexbase("magasin","sql-param");
         <input type="text" name="Ville" placeholder="Ville" required  class="input-css" maxlength="100"  value="<?php echo $data[4] ?>"/><br/>
         <input type="text" name="Age" placeholder="Age" required  class="input-css" maxlength="2"  value="<?php echo $data[5] ?>"/><br/>
         <input type="text" name="Mail" placeholder="Mail" required  class="input-css" maxlength="100"  value="<?php echo $data[6] ?>"/><br/>
+        <input type="hidden" name="code" placeholder="code" class="input-css" maxlength="100"  value="<?php echo $data[0] ?>"/><br/>
 
+        <input type="submit" value="UPDATE" name="UPDATE" class="boutton"/>
         <input type="reset" value="ANNULER" name="annuler" class="boutton"/>
         <button onclick="javascript:history.back()" class="boutton">Retour</button>
         &nbsp
         <input type="submit" value="AJOUTER" name="ajouter_article" class="boutton"/>
+        
     </form>
     </section>
+
+    <?php
+    if(isset($_POST['UPDATE'])){
+        $rqt_update="UPDATE client SET Id_Client='$_POST['id']' WHERE Id_Client='$_POST['code']'";
+    }
+
+    ?>
 </body>
 </html>
