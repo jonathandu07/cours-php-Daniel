@@ -24,6 +24,10 @@ $idcom=connexbase("magasin","sql-param");
     ?>
     <section class="section-css">
         <?php
+        if(!isset($_POST['Id_Client'])){
+            header('location: chercher-client.php');
+            exit();
+        }
         // On récuprére la variable id du client
         $id= htmlspecialchars($_POST['Id_Client']);
         // création de la requête pour récupérer les donnés du client
@@ -35,11 +39,6 @@ $idcom=connexbase("magasin","sql-param");
         // print_r($resultat);
 
         // création du formulaire
-
-        if(!isset($_POST['Id_Client'])){
-            header('location: chercher-client.php');
-            exit();
-        }
 
         ?>
     </section>
