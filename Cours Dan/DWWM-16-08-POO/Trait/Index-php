@@ -1,0 +1,32 @@
+<?php
+
+// Le problème en PHP concernant l'héritage  et qu'une classe fille ne peut heriter que d'une classe mére
+
+//Les traits permettent de résoudre cette problèmatique
+
+trait Ecole
+{
+
+    public function Apprendre()
+    {
+        echo "J'adore apprendre le PHP<br />";
+    }
+}
+trait Entreprises
+{
+    public function Geolocalisation()
+    {
+        echo "Vous êtes situé sur valence, dans la drôme;<br />";
+    }
+}
+
+class Apprenant
+{
+
+    use Ecole, Entreprises;
+}
+
+
+$stagiaire = new Apprenant;
+$stagiaire->Apprendre();
+$stagiaire->Geolocalisation();

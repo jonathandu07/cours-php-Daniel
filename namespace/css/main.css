@@ -1,0 +1,39 @@
+body{
+    background-color: #03224c;
+}
+
+/* travail sur la section */
+
+section{
+    width: 20vw;
+    line-height:5vh;
+    background-color:#8B0000;
+    color: beige;
+    text-align: center;
+    margin: auto;
+    margin-top:50px;
+    border-radius: 10px;
+    border: 1px solid #f9ba05;
+}
+
+table{
+    margin: auto;
+
+}
+
+tr{
+    height: 100px;
+}
+
+td{
+    width: 100px;
+    border: 1px solid #f9ba05;
+    text-align: center;
+    color: white;
+    font-weight: bold;
+    border-radius: 10px;
+    font-size: 2rem;
+    background-color: #B22222;
+    
+}
+

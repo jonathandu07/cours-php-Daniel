@@ -1,0 +1,22 @@
+Création d'un formulaire avec un champ de type texte et un boutton traitement
+le fichier classe se nomme traitement.class;php
+Le fichier classe se trouve dans un dossier class
+La classe se nomme traitement
+le fichier principal se nomme main.php (formulaire.php)
+
+// 1 ) Création d'un formualire avec uun champ de type de texte et un boutton "traitement",
+//   - le fichier classe se nomme traitement.class.php,
+//   - le fichier class se trouve dans un dossier class,
+//   - la classe se nomme traitement,
+//   - le fichier principale se nomme main.php,
+
+// 2 ) Résultat de la requète :
+//   - afficher la chaîne de caractère saisie,
+//   - Retrouner le nombre de caractères,
+//   - Retourner le caractère ) la position de x (charAT),
+//   - Retourner la position du caractère (indexOF),
+//   - retourner la position du caractère à partir d'une position (indexOF),
+//   - retourner un chaîne de caractère du texte (substring),
+//   - retourner un tableau (split),
+//   - retourner la chaîne en MAJUSCULE,
+//   - retourner la chaîne en minuscule.

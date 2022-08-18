@@ -29,7 +29,7 @@
                 if(isset($_POST['afficher'])){
                     $nombres=$_POST['nombres']+1;
                     $affiche=$_POST['competence'];
-                    for($nb=1;$cpt<$nombres)
+                    for($nb=1;$cpt<$nombres){}
                     }
                     echo($sortie[1]);
             
