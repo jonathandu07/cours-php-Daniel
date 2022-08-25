@@ -29,7 +29,7 @@
             if (isset($_POST['envoyer'])){
             $nbr=$_POST['nombre'];
             for($compteur=1;$compteur < $nbr; $compteur++): 
-            
+            }
             ?>
             <input type="text" /><br/>
             <?php endfor ?>

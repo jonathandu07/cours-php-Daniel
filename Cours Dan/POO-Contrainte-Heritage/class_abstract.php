@@ -15,7 +15,9 @@
 }
 class B extends A
 {
-   public function metho
+   public function metho(){
+      
+   }
 }
 $objet1 = new A;
 $objet1->methode();

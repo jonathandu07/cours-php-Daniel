@@ -24,8 +24,9 @@
     // $langue=array($en,$fr,$esp,$de);
     if(isset($_POST['submit'])){
         if ($langue = $_POST['esp']){
-            $langue = 'esp'
+            $langue = 'esp';
         }
+    }
     ?>
     <?php switch($langue) :
      case "fr":?>

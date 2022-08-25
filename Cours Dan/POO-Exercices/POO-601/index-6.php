@@ -24,7 +24,7 @@ include_once('class/calculatrice.class.php');
 	</form>
 	<hr />
 	<?php
-	if ((isset($_POST['ad'])) || (isset($_POST['so'])) || (isset($_POST['di'])) || (isset($_POST['mu']))) {
+	if ((isset($_POST['ad'])) || (isset($_POST['so'])) || (isset($_POST['di'])) || (isset($_POST['mu']))) {}
 	if (is_numeric($_POST['valeur1']) || is_numeric($_POST['valeur2'])) {
 		$calculer = new Calculatrice($_POST['valeur1'], $_POST['valeur2']);
 		if (isset($_POST['ad'])) {
