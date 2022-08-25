@@ -97,6 +97,7 @@ h3{
 
 .bas{
     color: #f9ba05;
+<<<<<<< Updated upstream
     font-size: 2rem;
     text-align: center;
     border: 1px solid #f9ba05;
@@ -115,3 +116,15 @@ h3{
 /* $_session =['prix']=$_session['prix']
 rprint
 fprint*/
+=======
+font-size: 2rem;
+font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;}
+
+b{
+    border: solid 2px #f9ba05;
+}
+
+input{
+    text-align: center;
+}
+>>>>>>> Stashed changes

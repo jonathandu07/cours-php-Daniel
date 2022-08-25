@@ -8,6 +8,7 @@
     <title>formulaire</title>
 </head>
 <body>
+<<<<<<< Updated upstream
     <section class="main">
         <h1>Livre d'or</h1>
         <form action="formulaire.php" method="POST">
@@ -52,5 +53,22 @@
         </table> 
     <!-- </section> -->
 
+=======
+    <form action="formulaire.php" method="POST">
+        <input type="text" name="nom" placeholder="nom" required maxlength="25">
+        <input type="text" name="objet" placeholder="objet" required maxlength="25">
+        <textarea name="message" id="message" cols="30" rows="10" maxlength="250"></textarea>
+        <input type="submit" value="valider">
+        <input type="reset" value="annuler">
+    </form>
+
+    <?php
+        $fichier=fopen('./txt/password_list.txt','x');
+        while (!feof($fichier)){
+            echo fgets($fichier)."<br/>";
+        }
+        fclose($fichier);    
+    ?>
+>>>>>>> Stashed changes
 </body>
 </html>
