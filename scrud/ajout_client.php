@@ -50,7 +50,7 @@ $idcom=connexbase("magasin","sql-param");
                 $Age=htmlspecialchars($_POST['Age']);
                 $Mail=htmlspecialchars($_POST['Mail']);
 
-                $rqt_ajout_client="INSERT INTO article VALUES('$Id_Client','$Nom','$Prenom','$Adresse','$Ville','$Nom','$Age','$Mail')";
+                $rqt_ajout_client="INSERT INTO client VALUES('$Id_Client','$Nom','$Prenom','$Adresse','$Ville','$Nom','$Age','$Mail')";
                 $resultat=$idcom->query($rqt_ajout_client);
             // récupére id de connection
                 
